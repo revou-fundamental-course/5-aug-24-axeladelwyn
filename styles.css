@@ -1,5 +1,8 @@
 form {
     padding:  12px;
     background-color: aliceblue;
-    font-size: 25px;
+}
+
+main {
+    display:flex;
 }
