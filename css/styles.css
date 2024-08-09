@@ -1,5 +1,50 @@
 form {
     padding:  12px;
     background-color: aliceblue;
-    font-size: 25px;
+}
+
+main {
+    display:flex;
+}
+
+aside {
+    padding: 48px;
+}
+
+.button {
+    height: 32px;
+    border: none;
+    border-radius: 0;
+}
+
+.bg-lightsky {
+    color: lightskyblue
+}
+
+.berat-badan {
+    width: 50%;
+    height: 15px;
+    font-family: ui-monospace;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
