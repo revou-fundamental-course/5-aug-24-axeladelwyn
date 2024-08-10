@@ -1,48 +1,50 @@
-
-
 html {
   background-color: rgb(189 174 174);
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
+
+header {
+  text-align: center;
+}
+
 main {
   display: flex;
-  padding-bottom: 167px;
+  
 }
 
 aside {
   padding: 48px;
 }
 
-.container {  
-  max-width: 400px;  
-  margin: auto;  
-  padding: 20px;  
-  background-color: #fff;  
-  border-radius: 10px;  
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
-}
-.button {
-  width: 48%; /* Adjust button width */  
-  padding: 10px;  
-  margin: 5px 1%;  
-  border: none;  
-  border-radius: 5px;  
-  cursor: pointer;  
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-inline: 200px;
 }
 
-.reset {
-  background-color: red;
+.button {
+  width: 48%; /* Adjust button width */
+  padding: 10px;
+  margin: 5px 1%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.calculate {
-  color: black;
-  background-color: grey;
-}
+
 
 .berat-badan {
-  width: 100%; /* Fill the width of the container */  
-  padding: 10px;  
-  margin-bottom: 10px;  
-  border: 1px solid #ccc;  
-  border-radius: 5px; 
+  width: 100%; /* Fill the width of the container */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 footer {
@@ -51,9 +53,11 @@ footer {
 }
 
 table {
+  margin-top: auto;
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  
 }
 
 td,
@@ -61,6 +65,7 @@ th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  
 }
 
 tr:nth-child(even) {
@@ -69,4 +74,12 @@ tr:nth-child(even) {
 
 div {
   padding-top: 7px;
+}
+ 
+section > p {
+  font-size: 25px;
+}
+
+ul > li, p {
+  font-size : 25px;
 }
