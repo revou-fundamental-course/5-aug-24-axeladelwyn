@@ -86,3 +86,7 @@ section > p {
 ul > li, p {
   font-size : 25px;
 }
+
+form > h2 {
+  text-align: center;
+}
