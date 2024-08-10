@@ -1,45 +1,63 @@
-form {
-    padding:  12px;
-    background-color: aliceblue;
-}
 
+
+html {
+  background-color: rgb(189 174 174);
+}
 main {
-    display:flex;
+  display: flex;
+  padding-bottom: 167px;
 }
 
 aside {
-    padding: 48px;
+  padding: 48px;
 }
 
+.container {  
+  max-width: 400px;  
+  margin: auto;  
+  padding: 20px;  
+  background-color: #fff;  
+  border-radius: 10px;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
 .button {
-    height: 32px;
-    border: none;
-    border-radius: 0;
+  width: 48%; /* Adjust button width */  
+  padding: 10px;  
+  margin: 5px 1%;  
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer;  
 }
 
-.bg-lightsky {
-    color: lightskyblue
+.reset {
+  background-color: red;
+}
+.calculate {
+  color: black;
+  background-color: grey;
 }
 
 .berat-badan {
-    width: 50%;
-    height: 15px;
-    font-family: ui-monospace;
-    font-size: 14px;
+  width: 100%; /* Fill the width of the container */  
+  padding: 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #ccc;  
+  border-radius: 5px; 
 }
 
 footer {
-    text-align: center;
+  text-align: center;
+  padding-top: 15px;
 }
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -47,4 +65,8 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+div {
+  padding-top: 7px;
 }
