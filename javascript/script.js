@@ -24,8 +24,7 @@ function calculateBMI() {
   }
 }
 
-function resetForm() {  
-  document.getElementById('weight').reset();
-  document.getElementById('height').reset(); // Resets the form fields  
-  document.getElementById('result').innerText = ''; // Clears the result display  
-}  
+function resetForm() {
+  document.getElementById("bmi-form").reset();
+  document.getElementById("result").innerHTML = "";
+}
