@@ -1,139 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
 
-    <title>BMI Calculator</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-  <body>
-    <header>
-      <h1 class="main-title">Body Mass Index calculators</h1>
-    </header>
+  <title>BMI Calculator</title>
+</head>
 
-    <main>
-      <aside>
-        <article>
-          <p>Please input data correctly.</p>
-        </article>
+<body>
+  <header>
+    <h1 class="main-title">Body Mass Index calculators</h1>
+  </header>
 
-        <div class="container">
+  <main>
+    <aside>
+      <article>
+        <p>Please input data correctly.</p>
+      </article>
+
+      <div class="container">
+        <form id="bmi-form">
+          <h2>Body Mass Index Calculator</h2>
+          <label for="gender">Gender:</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
           <form id="bmi-form">
-            <h2>Body Mass Index Calculator</h2>
-            <label for="gender">Gender:</label>
-            <select id="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-            <form id="bmi-form">
-              <br /><br />
-              <label for="weight">Body Weight (kg):</label>
-              <input type="number" id="weight" required />
-              <br /><br />
-              <label for="height">Body Height (cm):</label>
-              <input type="number" id="height" step="1" required />
-              <br /><br />
-            </form>
-            <div>
-              <button onclick="calculateBMI()" type="button" id="calculate" class="button-calculate">Calculate</button>
-              <button onclick="resetForm()" id="reset" type="button" class="button-reset">Reset</button>
-            </div>
-            <h3 id="result"></h3>
+            <br /><br />
+            <label for="weight">Body Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Input your body height" required />
+            <br /><br />
+            <label for="height">Body Height (cm):</label>
+            <input type="number" id="height" step="1" placeholder="Input your body weight"required />
+            <br /><br />
           </form>
-        </div>
+          <div>
+            <button onclick="calculateBMI()" type="button" id="calculate" class="button-calculate">Calculate</button>
+            <button onclick="resetForm()" type="button" id="reset" class="button-reset">Reset</button>
+          </div>
+          <h3 id="result"></h3>
+        </form>
+      </div>
 
-        <article>
-          <header>
-            <h2>Form Information</h2>
-          </header>
-          <table class="table">
-            <tr>
-              <th>BMI</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>less than 16.0</td>
-              <td>Severely Underweight</td>
-            </tr>
-            <tr>
-              <td>16.0 - 18.4</td>
-              <td>Underweight</td>
-            </tr>
-            <tr>
-              <td>18.5-24.9</td>
-              <td>Normal</td>
-            </tr>
-            <tr>
-              <td>25.0 - 29.9</td>
-              <td>Overweight</td>
-            </tr>
-          </table>
-        </article>
-      </aside>
+      <article>
+        <header>
+          <h2>Form Information</h2>
+        </header>
+        <table class="table">
+          <tr>
+            <th>BMI</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>less than 16.0</td>
+            <td>Severely Underweight</td>
+          </tr>
+          <tr>
+            <td>16.0 - 18.4</td>
+            <td>Underweight</td>
+          </tr>
+          <tr>
+            <td>18.5-24.9</td>
+            <td>Normal</td>
+          </tr>
+          <tr>
+            <td>25.0 - 29.9</td>
+            <td>Overweight</td>
+          </tr>
+        </table>
+      </article>
+    </aside>
 
-      <aside>
-        <section>
-          <p>
-            A BMI calculator is a tool that calculates the Body Mass Index (BMI)
-            based on a person's height and weight. It helps determine if an
-            individual is underweight, normal weight, overweight, or obese,
-            according to established categories. You can find online calculators
-            that provide the BMI value and corresponding weight status.
-          </p>
+    <aside>
+      <section>
+        <p>
+          A BMI calculator is a tool that calculates the Body Mass Index (BMI)
+          based on a person's height and weight. It helps determine if an
+          individual is underweight, normal weight, overweight, or obese,
+          according to established categories. You can find online calculators
+          that provide the BMI value and corresponding weight status.
+        </p>
 
-          <ul>
-            <p>Suggestion if you're Overweight</p>
-            <li>
-              Consult a Healthcare Professional: Start by talking to a doctor or
-              a registered dietitian. They can help you create a personalized
-              plan based on your health needs.
-            </li>
-            <li>
-              Set Realistic Goals: Aim for gradual weight loss, such as 1-2
-              pounds per week. Focus on establishing long-term lifestyle changes
-              rather than quick fixes.
-            </li>
-            <li>
-              Stay Hydrated: Drink plenty of water throughout the day.
-              Sometimes, thirst is mistaken for hunger.
-            </li>
-            <li>
-              Be Mindful: Practice mindful eating by paying attention to your
-              hunger cues, eating slowly, and savoring your food.
-            </li>
-          </ul>
-          <ul>
-            <p>Suggestion if you're Underweight</p>
-            <li>
-              Choose Nutrient-Dense Foods: Focus on foods that are high in
-              calories but also nutritious, such as nuts, seeds, avocados, olive
-              oil, and whole grains.
-            </li>
-            <li>
-              Set Realistic Goals: Aim for gradual weight gain, such as 0.5 to 1
-              pound per week. This can help ensure that weight gained is more
-              likely to be muscle rather than fat.
-            </li>
-            <li>
-              Eat More Frequently: Include 5-6 smaller meals or snacks
-              throughout the day rather than three large meals to increase
-              calorie intake.
-            </li>
-            <li>
-              Limit Empty Calories: While it might be tempting to eat high-sugar
-              or low-nutrient foods to gain weight, it’s better to focus on
-              nutrient-dense options for overall health.
-            </li>
-          </ul>
-        </section>
-      </aside>
-    </main>
-    <footer>
-      <p>Made by Axel Adelwyn</p>
-    </footer>
+        <ul>
+          <p>Suggestion if you're Overweight</p>
+          <li>
+            Consult a Healthcare Professional: Start by talking to a doctor or
+            a registered dietitian. They can help you create a personalized
+            plan based on your health needs.
+          </li>
+          <li>
+            Set Realistic Goals: Aim for gradual weight loss, such as 1-2
+            pounds per week. Focus on establishing long-term lifestyle changes
+            rather than quick fixes.
+          </li>
+          <li>
+            Stay Hydrated: Drink plenty of water throughout the day.
+            Sometimes, thirst is mistaken for hunger.
+          </li>
+          <li>
+            Be Mindful: Practice mindful eating by paying attention to your
+            hunger cues, eating slowly, and savoring your food.
+          </li>
+        </ul>
+        <ul>
+          <p>Suggestion if you're Underweight</p>
+          <li>
+            Choose Nutrient-Dense Foods: Focus on foods that are high in
+            calories but also nutritious, such as nuts, seeds, avocados, olive
+            oil, and whole grains.
+          </li>
+          <li>
+            Set Realistic Goals: Aim for gradual weight gain, such as 0.5 to 1
+            pound per week. This can help ensure that weight gained is more
+            likely to be muscle rather than fat.
+          </li>
+          <li>
+            Eat More Frequently: Include 5-6 smaller meals or snacks
+            throughout the day rather than three large meals to increase
+            calorie intake.
+          </li>
+          <li>
+            Limit Empty Calories: While it might be tempting to eat high-sugar
+            or low-nutrient foods to gain weight, it’s better to focus on
+            nutrient-dense options for overall health.
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+  <footer>
+    <p>Made by Axel Adelwyn</p>
+  </footer>
 
-    <script src="javascript/script.js"></script>
-  </body>
+  <script src="javascript/script.js"></script>
+</body>
+
 </html>
