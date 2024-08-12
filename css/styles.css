@@ -1,21 +1,31 @@
-html {
-  background-color: rgb(189 174 174);
+/* Base Styles */
+html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #bdaeae;
   display: flex;
   flex-direction: column;
 }
 
+/* Header */
 header {
   text-align: center;
+  padding: 20px;
+  color: #000000;
 }
 
+/* Main Layout */
 main {
   display: flex;
-  
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-
+/* Container */
 .container {
   text-align: center;
   width: 444px;
@@ -24,83 +34,100 @@ main {
   background-color: #e6e0e0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
 }
 
-
-.berat-badan {
-  width: 100%; /* Fill the width of the container */
+/* Form Elements */
+input[type="number"], select, .berat-badan {
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1em;
 }
 
-footer {
-  text-align: center;
-  padding-top: 15px;
-}
-
-table {
-  margin-top: auto;
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  
-}
-
-td,
-th {
-  border: 1px solid #dddddd;
+label {
+  font-weight: bold;
   text-align: left;
-  padding: 8px;
-  
-}
-
-tr{
-  height: 60px;
-}
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-div {
-  padding-top: 7px;
-}
- 
-section > p {
-  font-size: 25px;
-}
-
-ul > li, p {
-  font-size : 25px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 form > h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-#reset {
+/* Buttons */
+#calculate, #reset {
+  width: 48%;
+  padding: 10px;
   border-radius: 7.5px;
   font-size: 1em;
-  
+  border: none;
+  cursor: pointer;
 }
 
-#calculate {
-  border-radius: 7.5px;
-  font-size: 1em;
+.button-calculate {
+  background-color: #8b8b8b;
+  color: white;
 }
 
 .button-calculate:hover {
   background-color: rgb(158, 143, 143);
 }
 
+.button-reset {
+  background-color: #e74c3c;
+  color: white;
+}
+
 .button-reset:hover {
   background-color: red;
 }
 
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  height: 60px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Sections and Content */
+section > p {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+ul > li, p {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
 aside {
   padding-left: 100px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 15px;
+  color: #000000;
 }
 
 footer p {
