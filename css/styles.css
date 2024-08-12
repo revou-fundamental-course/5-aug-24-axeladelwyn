@@ -29,15 +29,6 @@ aside {
   padding-inline: 200px;
 }
 
-.button {
-  width: 48%; /* Adjust button width */
-  padding: 10px;
-  margin: 5px 1%;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 
 .berat-badan {
   width: 100%; /* Fill the width of the container */
@@ -92,6 +83,16 @@ form > h2 {
 }
 
 #reset {
-  background-color: red;
-  border-color: red;
+  border-radius: 7.5px;
+  font-size: 1em;
+  
+}
+
+#calculate {
+  border-radius: 7.5px;
+  font-size: 1em;
+}
+
+.highlight-button:hover {
+  background-color: rgb(158, 143, 143);
 }
