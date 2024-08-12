@@ -15,18 +15,16 @@ main {
   
 }
 
-aside {
-  padding: 48px;
-}
 
 .container {
-  max-width: 400px;
+  text-align: center;
+  width: 444px;
   margin: auto;
-  padding: 20px;
+  padding: 32px;
   background-color: #e6e0e0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding-inline: 200px;
+  
 }
 
 
@@ -93,6 +91,19 @@ form > h2 {
   font-size: 1em;
 }
 
-.highlight-button:hover {
+.button-calculate:hover {
   background-color: rgb(158, 143, 143);
+}
+
+.button-reset:hover {
+  background-color: red;
+}
+
+aside {
+  padding-left: 100px;
+}
+
+footer p {
+  font-size: 12px;
+  padding-top: 50px;
 }
