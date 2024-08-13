@@ -1,5 +1,6 @@
 /* Base Styles */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -12,9 +13,17 @@ html, body {
 /* Header */
 header {
   text-align: center;
-  padding: 1rem;  
+  padding: 1rem;
   color: #000000;
   font-size: 1.5rem;
+}
+
+header h2 {
+  margin: 0;
+}
+article p {
+  text-align: center;
+
 }
 
 /* Main Layout */
@@ -22,30 +31,27 @@ main {
   display: flex;
   flex: 1;
   justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  padding: 0;
+  flex-wrap: wrap;
+  /* Allows content to wrap on smaller screens */
 }
 
 /* Container */
-.container {
-  text-align: center;
+div.container {
   width: 100%;
-  max-width: 500px;
-  margin: auto;
-  margin: 1rem;
-  background-color: #e6e0e0;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px; /* Add padding for better spacing */
+  background-color: rgb(201, 191, 191);
+  border: 2px solid #c41818;
+  padding-inline: 5vh;
+  /* Add padding for better spacing */
 }
 
 /* Form Elements */
-input[type="number"], select, .berat-badan {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+#gender, input[type="number"] {
+  width:100%;
+  padding: 1vh;
+  margin-bottom: 1vh;
+  border: 1px solid #c41818;
   border-radius: 5px;
   font-size: 1em;
 }
@@ -54,24 +60,25 @@ label {
   font-weight: bold;
   text-align: left;
   display: block;
-  margin-bottom: 5px;
 }
 
-form > h2 {
+form h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.5rem; /* Increase heading size slightly */
+  font-size: 1.5rem;
+  /* Increase heading size slightly */
 }
 
 /* Buttons */
-#calculate, #reset {
+#calculate,
+#reset {
   width: 48%;
-  padding: 10px;
+  padding: 3vh;
   border-radius: 7.5px;
   font-size: 1em;
   border: none;
   cursor: pointer;
-  margin-bottom: 10px; /* Add margin for better spacing */
+  margin-bottom: 10px;
+  /* Add margin for better spacing */
 }
 
 .button-calculate {
@@ -96,18 +103,18 @@ form > h2 {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
   font-family: Arial, sans-serif;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 2vh;
 }
 
 tr {
-  height: 60px;
+  height: 5vh;
 }
 
 tr:nth-child(even) {
@@ -115,37 +122,39 @@ tr:nth-child(even) {
 }
 
 /* Sections and Content */
-section > p {
+section>p {
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
-ul > li, p {
+ul>li,
+p {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 aside {
-  padding-left: 0; /* Remove large padding for better mobile layout */
+  padding-left: 0;
+  /* Remove large padding for better mobile layout */
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding-top: 15px;
   color: #000000;
 }
 
 footer p {
   font-size: 0.75rem;
-  padding-top: 50px;
 }
 
 /* Responsive Media Queries */
 @media (min-width: 768px) {
+
   /* Adjust layout for tablets and larger screens */
   main {
-    flex-direction: row; /* Row layout for larger screens */
+    flex-direction: row;
+    /* Row layout for larger screens */
   }
 
   .container {
@@ -158,6 +167,7 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+
   /* Adjust layout for desktops and larger screens */
   .container {
     max-width: 700px;
@@ -167,7 +177,7 @@ footer p {
     font-size: 2rem;
   }
 
-  form > h2 {
+  form h2 {
     font-size: 2rem;
   }
 }
