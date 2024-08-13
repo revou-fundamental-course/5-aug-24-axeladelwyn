@@ -42,14 +42,14 @@ div.container {
   border-radius: 10px;
   background-color: rgb(201, 191, 191);
   border: 2px solid #c41818;
-  padding-inline: 5vh;
   text-align: center;
   /* Add padding for better spacing */
 }
 
 /* Form Elements */
 #gender, input[type="number"] {
-  width:100%;
+  text-align: center;
+  width:75%;
   padding: 1vh;
   margin-bottom: 1vh;
   border: 1px solid #c41818;
@@ -59,7 +59,7 @@ div.container {
 
 label {
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   display: block;
 }
 
