@@ -12,8 +12,9 @@ html, body {
 /* Header */
 header {
   text-align: center;
-  padding: 20px;
+  padding: 1rem;  
   color: #000000;
+  font-size: 1.5rem;
 }
 
 /* Main Layout */
@@ -22,18 +23,21 @@ main {
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1rem;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
 }
 
 /* Container */
 .container {
   text-align: center;
-  width: 444px;
+  width: 100%;
+  max-width: 500px;
   margin: auto;
-  padding: 32px;
+  margin: 1rem;
   background-color: #e6e0e0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding for better spacing */
 }
 
 /* Form Elements */
@@ -56,6 +60,7 @@ label {
 form > h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 1.5rem; /* Increase heading size slightly */
 }
 
 /* Buttons */
@@ -66,6 +71,7 @@ form > h2 {
   font-size: 1em;
   border: none;
   cursor: pointer;
+  margin-bottom: 10px; /* Add margin for better spacing */
 }
 
 .button-calculate {
@@ -110,17 +116,17 @@ tr:nth-child(even) {
 
 /* Sections and Content */
 section > p {
-  font-size: 25px;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
 ul > li, p {
-  font-size: 25px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 aside {
-  padding-left: 100px;
+  padding-left: 0; /* Remove large padding for better mobile layout */
 }
 
 /* Footer */
@@ -131,6 +137,37 @@ footer {
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 0.75rem;
   padding-top: 50px;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+  /* Adjust layout for tablets and larger screens */
+  main {
+    flex-direction: row; /* Row layout for larger screens */
+  }
+
+  .container {
+    max-width: 600px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Adjust layout for desktops and larger screens */
+  .container {
+    max-width: 700px;
+  }
+
+  header {
+    font-size: 2rem;
+  }
+
+  form > h2 {
+    font-size: 2rem;
+  }
 }
