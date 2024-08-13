@@ -21,9 +21,9 @@ header {
 header h2 {
   margin: 0;
 }
+
 article p {
   text-align: center;
-
 }
 
 /* Main Layout */
@@ -43,6 +43,7 @@ div.container {
   background-color: rgb(201, 191, 191);
   border: 2px solid #c41818;
   padding-inline: 5vh;
+  text-align: center;
   /* Add padding for better spacing */
 }
 
@@ -101,7 +102,7 @@ form h2 {
 
 /* Table Styling */
 table {
-  width: 100%;
+  width: 100vh;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
 }
@@ -127,7 +128,7 @@ section>p {
   margin-bottom: 1rem;
 }
 
-ul>li,
+ul li,
 p {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -146,38 +147,4 @@ footer {
 
 footer p {
   font-size: 0.75rem;
-}
-
-/* Responsive Media Queries */
-@media (min-width: 768px) {
-
-  /* Adjust layout for tablets and larger screens */
-  main {
-    flex-direction: row;
-    /* Row layout for larger screens */
-  }
-
-  .container {
-    max-width: 600px;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 1024px) {
-
-  /* Adjust layout for desktops and larger screens */
-  .container {
-    max-width: 700px;
-  }
-
-  header {
-    font-size: 2rem;
-  }
-
-  form h2 {
-    font-size: 2rem;
-  }
 }
