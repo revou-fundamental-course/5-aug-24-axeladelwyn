@@ -8,6 +8,7 @@ function calculateBMI() {
     const bmi = weight / (heightInM * heightInM);
     let category = "";
 
+    // Logic if dan else if untuk menemukan kategori BMI
     if (bmi < 18.5) {
       category = "Severely Underweight";
     } else if (bmi < 24.9) {
@@ -23,7 +24,7 @@ function calculateBMI() {
     resultElement.innerHTML = "Please enter valid weight and height.";
   }
 }
-
+// ResetForm untuk button pada formulir BMI
 function resetForm() {
   document.getElementById("bmi-form").reset();
   document.getElementById("result").innerHTML = "";
