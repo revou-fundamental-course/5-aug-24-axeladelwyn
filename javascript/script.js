@@ -19,6 +19,7 @@ function calculateBMI() {
       category = "Obese";
     }
 
+    // Menampilkan hasil BMi pada layar.
     resultElement.innerHTML = `Your BMI is ${bmi.toFixed(2)} - ${category}`;
   } else {
     resultElement.innerHTML = "Please enter valid weight and height.";
