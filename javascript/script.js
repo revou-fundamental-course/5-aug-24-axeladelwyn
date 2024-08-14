@@ -22,6 +22,7 @@ function calculateBMI() {
     // Menampilkan hasil BMi pada layar.
     resultElement.innerHTML = `Your BMI is ${bmi.toFixed(2)} - ${category}`;
   } else {
+    // Jika tidak memasukan input maka tampilkan ini
     resultElement.innerHTML = "Please enter valid weight and height.";
   }
 }
